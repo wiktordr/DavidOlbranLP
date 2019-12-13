@@ -5,9 +5,11 @@ $('a').on('click', function(event){
     const hash = this.hash;
     
     $('html, body').animate(
-      {scrollTop: $(hash).offset().top - 57},
+      {scrollTop: $(hash).offset().top - 50},
       800
     );
+
+    $('.toggler').prop('checked', false);
   }
 });
 

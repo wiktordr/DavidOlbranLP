@@ -1,0 +1,187 @@
+@media (max-width: 1120px){
+  h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .container {
+    margin: 0 30px 0 30px;
+  }
+
+  .why {
+    &-video {
+      iframe {
+        width: 100vw;
+        height: 50vh;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+
+  body {
+    font-size: 21px;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  .btn {
+    &-red {    
+      font-size: 1.3rem;
+    } 
+  }
+}
+
+@media (max-width: 850px) {
+  .syllabus {
+    &-content{
+      flex-direction: column;
+    }
+  }
+
+  
+
+  .participate {
+    &-grid {
+      flex-direction: column;
+    }
+
+    &-box {
+      width: calc(100% - 40px);
+      margin: 20px;
+
+      ul {
+        li {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .about {
+    &-content {
+      .photo {
+        width: calc(45% - 30px);
+      }
+  
+      .text {
+        width: calc(55% - 30px);
+      }
+    }
+    
+  }
+
+  .form {
+  
+    &-content {
+      input {
+        width: calc(50% - 20px);
+      }
+  
+      select {
+        width: calc(50% - 20px);
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  .container {
+    margin: 0 10px 0 10px;
+  }
+
+  .why {
+    &-list {
+      ul {
+  
+        li {
+          padding: 10px;
+          margin: 8px;
+  
+          span {
+            padding: 4px 9px 4px 9px;
+            margin: 0 5px 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  .participate {
+    &-box {
+  
+      ul {
+        li {
+          margin: 6px 0 6px 10px;
+        }
+      }
+    }
+  }
+
+  .about {
+    &-content {
+      flex-direction: column;
+      .photo {
+        width: calc(100% - 30px);
+      }
+  
+      .text {
+        width: calc(100% - 30px);
+      }
+    }
+    
+  }
+
+  .form {
+  
+    &-content {
+      input {
+        width: calc(100% - 20px);
+      }
+  
+      select {
+        width: calc(100% - 20px);
+      }
+    }
+  }
+}

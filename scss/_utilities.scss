@@ -12,10 +12,11 @@ body {
   background: #111;
   color: $light-txt;
   font-family: 'IBM Plex Sans', 'sans-serif';
+  font-size: 24px;
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1150px;
   margin: auto;
   overflow: hidden;
   padding: 4rem 0; 
