@@ -1,0 +1,70 @@
+$main-color: #FF2E00; //#FF2E00
+$light-txt: #d5d6d4;
+$line-color: #999999;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  color: $light-txt;
+  font-family: 'IBM Plex Sans', 'sans-serif';
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 0; 
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.red-txt {
+  color: $main-color;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: $light-txt;
+}
+
+.btn {
+  &-red {
+    display: inline-block;
+    padding: 1rem 2rem 1rem 2rem;
+    transition: all 0.5s;
+    border-radius: 40px;
+    border: 1.2px solid $main-color;
+    cursor: pointer;
+    background: $main-color;
+    font-size: 1.6rem;
+
+    &:hover {
+      background: $light-txt;
+      border: 1.2px solid $main-color;
+      color: $main-color;
+    }
+  }
+
+}
