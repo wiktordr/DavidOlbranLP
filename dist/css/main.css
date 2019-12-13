@@ -277,7 +277,8 @@ a {
     font-size: 1.5rem;
     font-weight: 400; }
   .container {
-    margin: 0 30px 0 30px; }
+    margin: 0 30px 0 30px;
+    padding: 3rem 0; }
   .why-video iframe {
     width: 100vw;
     height: 50vh; } }
@@ -327,7 +328,8 @@ a {
     font-size: 1.1rem;
     font-weight: 400; }
   .container {
-    margin: 0 10px 0 10px; }
+    margin: 0 10px 0 10px;
+    padding: 2rem 0; }
   .why-list ul li {
     padding: 10px;
     margin: 8px; }
@@ -434,8 +436,8 @@ a {
   #navbar .menu > div {
     background: #444;
     border-radius: 50%;
-    width: 200vw;
-    height: 200vw;
+    width: 250vw;
+    height: 250vw;
     display: flex;
     flex: none;
     align-items: center;
