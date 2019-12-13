@@ -133,7 +133,12 @@ a {
   .why-video p {
     margin: 10px 15px 10px 15px; }
   .why-video iframe {
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: block;
+    margin: 0 auto;
+    height: 630px;
+    width: 1120px;
+    resize: both; }
 
 .syllabus-content {
   display: flex;
@@ -279,6 +284,16 @@ a {
   .container {
     margin: 0 30px 0 30px;
     padding: 3rem 0; }
+  .who-list ul {
+    list-style: none;
+    padding: 10px; }
+    .who-list ul li {
+      border-top: 1px solid #FF2E00;
+      padding: 15px;
+      margin: 15px;
+      width: calc(100% - 30px); }
+      .who-list ul li:first-child {
+        border-top: none; }
   .why-video iframe {
     width: 100vw;
     height: 50vh; } }
