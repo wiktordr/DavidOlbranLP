@@ -39,9 +39,24 @@
   }
 
   .why {
+    &-list {
+      ul {
+        list-style: none;
+  
+        li {
+          line-height: 1.5rem;
+  
+          span {
+            line-height: 1rem;
+          }
+        }
+      }
+    }
+    
     &-video {
-      iframe {
-        width: 100vw;
+      
+      iframe {  
+        width: 90vw;
         height: 50vh;
       }
     }

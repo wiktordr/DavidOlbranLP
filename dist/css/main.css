@@ -294,8 +294,14 @@ a {
       width: calc(100% - 30px); }
       .who-list ul li:first-child {
         border-top: none; }
+  .why-list ul {
+    list-style: none; }
+    .why-list ul li {
+      line-height: 1.5rem; }
+      .why-list ul li span {
+        line-height: 1rem; }
   .why-video iframe {
-    width: 100vw;
+    width: 90vw;
     height: 50vh; } }
 
 @media (max-width: 900px) {

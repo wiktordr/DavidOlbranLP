@@ -1,17 +1,29 @@
+
+
 $('a').on('click', function(event){
   if (this.hash !==''){
     event.preventDefault();
 
     const hash = this.hash;
-    
-    $('html, body').animate(
-      {scrollTop: $(hash).offset().top - 50},
-      800
-    );
 
-    $('.toggler').prop('checked', false);
-  }
-});
+    if ($(window).width() <= 850) {
+      $('html, body').animate(
+        {scrollTop: $(hash).offset().top},
+        800
+      );
+  
+      $('.toggler').prop('checked', false);
+    } else {
+          $('html, body').animate(
+            {scrollTop: $(hash).offset().top - 57},
+            800
+          );
+
+          $('.toggler').prop('checked', false);
+        }
+      }
+    }
+    );
 
 $(function() {
 	$(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
