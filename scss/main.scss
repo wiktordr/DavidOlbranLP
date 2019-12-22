@@ -1,338 +1,351 @@
 @import 'utilities';
 
+.container-class {
+	background-color: red !important;
+}
+
+.icon-main {
+	margin: 0 15px;
+}
+
 #navbar {
-  display: flex;
-  position: sticky;
-  top: 0;
-  background: #222;
-  color: #fff;
-  justify-content: center;
-  z-index: 1;
-  opacity: 0.8;
-  padding: 15px;
-  font-size: 20px;
+	display: flex;
+	position: sticky;
+	top: 0;
+	background: #222;
+	color: #fff;
+	justify-content: center;
+	z-index: 1;
+	opacity: 0.8;
+	padding: 15px;
+	font-size: 20px;
 
-  input[type="checkbox"] {
-    visibility: hidden;
-  }
+	input[type="checkbox"] {
+		visibility: hidden;
+	}
 
-  ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
+	ul {
+		display: flex;
+		align-items: center;
+		list-style: none;
 
-    a {
-      color: #fff;
-      padding: 12px;
-      margin: 0 5px;
+		a {
+			color: #fff;
+			padding: 12px;
+			margin: 0 5px;
 
-      &:hover {
-        color: $main-color;
-      }
-    }
-  }
+			&:hover {
+				color: $main-color;
+			}
+		}
+	}
 }
 
 .showcase {
-  height: 100vh;
-  position: relative;
+	height: 100vh;
+	position: relative;
 
-  &:before {
-    content: '';
-    background: url('../img/showcase.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.2;
-    background-attachment: fixed;
-  }
+	&:before {
+		content: '';
+		background: url('../img/showcase.jpg') no-repeat center center/cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		opacity: 0.2;
+		background-attachment: fixed;
+	}
 
-  &-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-  }
+	&-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		height: 100%;
+	}
 
-  .sh{
-    &-1 {
-      margin: 0 0 20px 0;
-    }
+	.sh {
+		&-1 {
+			margin: 0 0 20px 0;
+		}
 
-    &-2 {
-      margin: 20px 0 20px 0;
-    }
+		&-2 {
+			margin: 20px 0 20px 0;
+		}
 
-    &-3 {
-      margin: 20px 0 20px 0;
-    }
-  }
-  
-  a {
-    margin: 20px 0 0 0
-  }
+		&-3 {
+			margin: 20px 0 20px 0;
+		}
+	}
+
+	a {
+		margin: 20px 0 0 0
+	}
 }
 
 .who {
-  &-list {
-    ul {
-      list-style: none;
-      padding: 10px;
+	&-list {
+		ul {
+			list-style: none;
+			padding: 10px;
 
-      li {
-        border-top: 1px solid $main-color;
-        padding: 15px;
-        margin: 15px;
-        width: 100%;
+			li {
+				border-top: 1px solid $main-color;
+				padding: 15px;
+				margin: 15px;
+				width: 100%;
 
-        &:first-child{
-          border-top: none;
-        }
-      }
-    }
-  }
+				&:first-child {
+					border-top: none;
+				}
+			}
+		}
+	}
 }
 
 .why {
-  &-list {
-    ul {
-      list-style: none;
+	&-list {
+		ul {
+			list-style: none;
 
-      li {
-        padding: 20px;
-        margin: 10px;
+			li {
+				padding: 20px;
+				margin: 10px;
 
-        span {
-          padding: 8px 16px 8px 16px;
-          border-radius: 50%;
-          background: $main-color;
-          opacity: 0.8;
-          margin: 0 10px 0 0;
-        }
-      }
-    }
-  }
+				span {
+					padding: 8px 16px 8px 16px;
+					border-radius: 50%;
+					background: $main-color;
+					opacity: 0.8;
+					margin: 0 10px 0 0;
+				}
+			}
+		}
+	}
 
-  &-video {
-    margin: 30px 0 0 0;
-    
-    p {
-      margin: 10px 15px 10px 15px;
-    }
+	&-video {
+		margin: 30px 0 0 0;
 
-    iframe {
-      margin: 0 auto;
-      display: block;
-      margin: 0 auto;
-      height: 630px;
-      width: 1120px;
-      resize: both;
-    }
-  }
+		p {
+			margin: 10px 15px 10px 15px;
+		}
+
+		video {
+			display: block;
+			margin: 20px auto 0 auto;
+			width: 1120px;
+			height: 630px;
+			resize: both;
+		}
+	}
 }
 
 .syllabus {
-  &-content {
-    display: flex;
-    flex-direction: row;
-    // font-size: 24px;
-    margin-top: 50px;
-  }
+	&-content {
+		display: flex;
+		flex-direction: row;
+		margin-top: 50px;
+	}
 
-  &-left {
-    width: calc(100% - 20px);
-    margin: 0 10px 0 10px;
+	&-left {
+		width: calc(100% - 20px);
+		margin: 0 10px 0 10px;
 
-    p {
-      margin-bottom: 10px;
-    }
-  }
+		p {
+			margin-bottom: 10px;
+		}
+	}
 
-  &-right {
-    grid-area: right;
-    width: calc(100% - 20px);
-    margin: 0 10px 0 10px;
+	&-right {
+		grid-area: right;
+		width: calc(100% - 20px);
+		margin: 0 10px 0 10px;
 
-    .accordion {
-      margin: 1rem 0;
-      padding: 0;
-      list-style: none;
-      border-top: 1px solid $line-color;
+		.accordion {
+			margin: 1rem 0;
+			padding: 0;
+			list-style: none;
+			border-top: 1px solid $line-color;
 
-      &-item {
-        border-bottom: 1px solid $line-color;
+			&-item {
+				border-bottom: 1px solid $line-color;
 
-        h4 {
-          margin: 0;
-          padding: .8rem 0;
-          cursor: pointer;
-          font-weight: normal;
-          color: $main-color;
+				h4 {
+					margin: 0;
+					padding: .8rem 0;
+					cursor: pointer;
+					font-weight: normal;
+					color: $main-color;
 
-          &::before {
-            content: '';
-            display: inline-block;
-            height: 7px;
-            width: 7px;
-            margin-right: 1rem;
-            margin-left: .5rem;
-            vertical-align: middle;
-            border-right: 1px solid;
-            border-bottom: 1px solid;
-            transform: rotate(-45deg);
-            transition: transform .2s ease-out;
-          }
-        }
+					&::before {
+						content: '';
+						display: inline-block;
+						height: 7px;
+						width: 7px;
+						margin-right: 1rem;
+						margin-left: .5rem;
+						vertical-align: middle;
+						border-right: 1px solid;
+						border-bottom: 1px solid;
+						transform: rotate(-45deg);
+						transition: transform .2s ease-out;
+					}
+				}
 
-        p {
-          margin: 0;
-          padding-bottom: .8rem;
-          display: none;
-        }
-      }
+				p {
+					margin: 0;
+					padding-bottom: .8rem;
+					display: none;
+				}
+			}
 
-      .is-active {
-        h4::before {
-          transform: rotate(45deg);
-        }
-      }
-    }
-  }
+			.is-active {
+				h4::before {
+					transform: rotate(45deg);
+				}
+			}
+		}
+	}
 }
 
 .participate {
-  &-grid {
-    display: flex;
-    flex-direction: row;
-    font-size: 24px;
-    margin-top: 50px;
-  }
+	&-grid {
+		display: flex;
+		flex-direction: row;
+		font-size: 24px;
+		margin-top: 50px;
+	}
 
-  &-box {
-    margin: 0 20px 0 20px;
-    padding: 40px;
-    width: calc(50% - 40px);
-    border: 1.5px solid $main-color;
+	&-box {
+		margin: 0 20px 0 20px;
+		padding: 40px;
+		width: calc(50% - 40px);
+		border: 1.5px solid $main-color;
 
-    h3 {
-      text-align: center;
-    }
+		h3 {
+			text-align: center;
+		}
 
-    .line {   
-      &-1 {
-        height: 2px;
-        width: 5rem;
-        background: $main-color;
-        display: block;
-        margin: 10px auto 20px auto;
-      }
+		.line {
+			&-1 {
+				height: 2px;
+				width: 5rem;
+				background: $main-color;
+				display: block;
+				margin: 10px auto 20px auto;
+			}
 
-      &-2 {
-        height: 1px;
-        width: 5rem;
-        background: $main-color;
-        display: block;
-        margin: 20px auto 5px auto;
-      }
+			&-2 {
+				height: 1px;
+				width: 5rem;
+				background: $main-color;
+				display: block;
+				margin: 20px auto 5px auto;
+			}
 
-      &-3 {
-        height: 1px;
-        width: 5rem;
-        background: $main-color;
-        display: block;
-        margin: 5px auto 20px auto;
-      }
-    }
+			&-3 {
+				height: 1px;
+				width: 5rem;
+				background: $main-color;
+				display: block;
+				margin: 5px auto 20px auto;
+			}
+		}
 
-    ul {
-      // height: 50%;
-      li {
-        margin: 10px 0 10px 30px;
-      }
-    }
+		ul {
 
-    p {
-      text-align: center;
-      margin: 10px 0 10px 0;
-      font-weight: 600;
-    }
-    
-    .center {
-      text-align: center;
-    }
-  }
+			// height: 50%;
+			li {
+				margin: 10px 0 10px 30px;
+			}
+		}
+
+		p {
+			text-align: center;
+			margin: 10px 0 10px 0;
+			font-weight: 600;
+		}
+
+		.center {
+			text-align: center;
+		}
+	}
 }
 
 .about {
-  &-content {
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
+	&-content {
+		display: flex;
+		flex-direction: row;
+		margin-top: 50px;
 
-    .photo {
-      margin: 0 15px 0 15px;
-      width: calc(40% - 30px);
+		.photo {
+			margin: 0 15px 0 15px;
+			width: calc(40% - 30px);
 
-      img {
-        width: 100%;
-      }
-    }
+			img {
+				width: 100%;
+			}
+		}
 
-    .text {
-      margin: 20px 15px 0 15px;
-      width: calc(60% - 30px);
-      
-      p {
-        padding: 15px 0 15px 0;
-      }
-    }
-  }
+		.text {
+			margin: 20px 15px 0 15px;
+			width: calc(60% - 30px);
+
+			p {
+				padding: 15px 0 15px 0;
+			}
+		}
+	}
 }
 
 .form {
-  margin: 20px 0 20px 0;
+	margin: 20px 0 20px 0;
 
-  &-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+	.container {
+		min-height: 100px !important;
+		height: 1000px;
+		overflow: inherit !important;
+	}
 
-    input {
-      padding: 15px 20px 15px 20px;
-      border-radius: 20px;
-      border: 1px solid $main-color;
-      margin: 10px;
-      width: calc(33% - 20px);
+	&-content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 
-      &[type="submit"] {
-        margin: 10px auto 10px auto;
-        width: 200px;
-        font-size: 18px;
-        background: $main-color;
-        color: $light-txt;
-        transition: all 0.5s;
+		input {
+			padding: 15px 20px 15px 20px;
+			border-radius: 20px;
+			border: 1px solid $main-color;
+			margin: 10px;
+			width: calc(33% - 20px);
 
-        &:hover {
-          background: #fff;
-          border: 1.2px solid $main-color;
-          color: $main-color;
-        }
-      }
-    }
+			&[type="submit"] {
+				margin: 10px auto 10px auto;
+				width: 200px;
+				font-size: 18px;
+				background: $main-color;
+				color: $light-txt;
+				transition: all 0.5s;
 
-    select {
-      padding: 15px 20px 15px 20px;
-      border-radius: 20px;
-      border: 1px solid $main-color;
-      margin: 10px;
-      width: calc(33% - 20px);
-    }
-  }
+				&:hover {
+					background: #fff;
+					border: 1.2px solid $main-color;
+					color: $main-color;
+				}
+			}
+		}
+
+		select {
+			padding: 15px 20px 15px 20px;
+			border-radius: 20px;
+			border: 1px solid $main-color;
+			margin: 10px;
+			width: calc(33% - 20px);
+		}
+	}
 }
 
 @import 'mobile';
